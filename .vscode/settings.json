@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.port": 5501
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "editor.fontFamily": "Apercu Pro, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true
 }
+
