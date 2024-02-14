@@ -2,6 +2,7 @@
     --main-branding-color:#685DC5;
     --primary-color: #636363;
     --secondary-color:#535353;
+    --font-size-small-heading: 15px;
 
     
 }
@@ -11,11 +12,20 @@ body{
     font-family: Apercu Pro;
 }
 
-h1,h2,#col{
-    color: var(--main-branding-color);
+.container {
+    padding-left: 40px !important; 
+    padding-right: 40px !important; 
 }
 
-p{
+
+h1, h2,  h6, #col, #app-deadline {
+    color: var(--main-branding-color) !important;
+}
+#app-deadline, #location, #duration, #start-date, #end-date, h2
+{
+    font-size: var(--font-size-small-heading)!important;
+}
+p, #marketing, #logo-text-1{
     color: var(--secondary-color);
     font-weight: 200;
     
@@ -42,22 +52,113 @@ background-color: #4fa06c;
 font-size: 10px;
 color: white;
 border-radius: 50%;
-height: 55px;
-width: 55px;
+height: 75px;
+width: 75px;
 border: none;
 font-weight: bold;
 }
 
 /* Hero Section*/
 
+.hero-title{
+    background-image: url(./src/icon.png);
+    background-size: 120px  120px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-right: 240px;
+}
+
 h1{
     font-weight: 500;
     line-height: 56px;
     letter-spacing: -0.6px;
+    width: 440px;
+    height: 96px;
+ 
 }
 
 #hero-summary{
     color: var(--primary-color);
     font-weight: 500px;
+    height: 64px;
+    width: 440px; 
+    padding-top: 1.25em;
+}
+
+    #hero-info{
+        height: 100px;
+        width: 440px;
     }
+
+    #position{
+        color: var(--primary-color);
+        font-weight: 500px;
+    }
+  #hero-btn{
+    margin-top: 30px;
+
+  }
+.hero-btn{
+   background-color: var(--main-branding-color);
+   color: white;
+   height: 30px;
+   border-radius: 20px;
+   border: none;
+   font-size: 10px;
+   padding-left: 2em;
+   padding-right: 2em;
+
+}    
+.hero-btn:hover {    
+    background-color: #4e469d;
+}
+
+.logo{
+   width: 60px;
+   height: auto;
+}
+
+
+.logo-text-2{
+color: var(--secondary-color);
+}
+
+.logo-text{
+    padding-top: 5px;
+ 
+}
+
+
+#app-countdown{
+    letter-spacing: 2px;
+}
+.application-deadline, .application-information{
+    border:1px solid #939393;
+    width: 480px;
+    margin-top: 25px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+#about-section{
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+#student-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.about-summary{
+    width: 479px;
+    height: 160px;
+}
+#about-info{
+    margin-top: 60px;
+}
 
