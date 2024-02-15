@@ -226,3 +226,73 @@ border: 1px solid #e4e4e4;
     height: 1px; 
     background-color: #b4b3b3;
 }
+/* Slider Section*/
+#carousel {
+    position: relative;
+    background-image: url(src/student-icon.png);
+    background-color: #939393;
+    height: 300px;
+    background-size: 60px 60px;
+    border: 1px solid #e4e4e4;
+    display: flex; 
+    flex-direction: row; /* figure out the correct direction when making it drag*/
+}
+
+.slider-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-container {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.student-slider {
+    position: relative;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 100px !important;
+    border-radius: 16px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+
+}
+
+#student-name {
+    font-weight: 500;
+    margin-bottom: 0%;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px; 
+}
+
+.linkedIn {
+    display: flex;
+    justify-content: flex-end;
+    color: #939393;
+    margin-left: 100px;
+}
+
+.linkedIn :hover {
+    color: #4e469d;
+}
+
+.slider-info {
+    flex: 1; /* Fill remaining space */
+    background-color: #ebebeb44;
+    padding: 20px;
+    
+}
