@@ -227,7 +227,12 @@ border: 1px solid #e4e4e4;
     background-color: #b4b3b3;
 }
 /* Slider Section*/
-#carousel {
+#carousel{
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    margin-top: 100px;
+}
+.carousel {
     position: relative;
     background-image: url(src/student-icon.png);
     background-color: #939393;
@@ -235,7 +240,7 @@ border: 1px solid #e4e4e4;
     background-size: 60px 60px;
     border: 1px solid #e4e4e4;
     display: flex; 
-    flex-direction: row; /* figure out the correct direction when making it drag*/
+    flex-direction: row; 
 }
 
 .slider-header {
