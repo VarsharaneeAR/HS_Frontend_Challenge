@@ -1,12 +1,12 @@
 :root{
     --main-branding-color:#685DC5;
     --primary-color: #636363;
-    --secondary-color:#535353;
+    --secondary-color:#949494;
     --font-size-small-heading: 12px;
 }
 
 body{
-    font-family: Apercu Pro;
+    font-family: Apercu Pro !important ;
 }
 
 h1, h2,  h6, #col {
@@ -29,44 +29,74 @@ p, #marketing, #logo-text-1{
     color: white;
     font-size: 10px;
     font-weight: bold;
+    margin-bottom: 50px;
 }
-
+#header{
+    font-size: 7px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    position: absolute;
+    margin-left: 2px !important;
+}
 #header-btn {
     display: flex;
     justify-content: flex-end;
-    padding-right: 5em;
+    left: 90%;
+    top: 5px;
+    position: absolute;
+  
 }
 
 .header-btn{
 align-items: center;
-background-color: #4fa06c;
+background-color: #53b976;
 font-size: 10px;
 color: white;
 border-radius: 50%;
+text-align: center;
 height: 75px;
 width: 75px;
 border: none;
 font-weight: bold;
 }
 
-/* Hero Section*/
-
-.hero-title{
-    background-image: url(./src/icon.png);
-    background-size: 120px  120px;
-    background-position: right top;
-    background-repeat: no-repeat;
-    margin-right: 240px;
+.header-btn:hover{
+    background-color: #499866;
 }
 
+/* Hero Section*/
 h1{
     font-weight: 500;
     line-height: 56px;
     letter-spacing: -0.6px;
-    width: 440px;
-    height: 96px;
+     width: 440px;
+     height: 96px;
+     position: relative;
+}
+.hero-title{
+    position:relative;
+    margin-right: 100px;
+    margin-top: 5px;
+    height:auto;
+    width:auto;
+    align-items: center;
+    justify-content: center;
 }
 
+.hero-img{
+    content:"";
+    background-image: url(./src/icon.png);
+    background-size: 120px 120px;
+    background-position: left 220px top -15px;
+    background-repeat: no-repeat;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+    z-index: -1;
+}
 #hero-summary{
     color: var(--primary-color);
     font-weight: 500px;
@@ -88,7 +118,6 @@ h1{
 
 #hero-btn{
     margin-top: 30px;
-
  }
 
 .hero-btn{
@@ -123,6 +152,19 @@ color: var(--secondary-color);
     letter-spacing: 2px;
 }
 
+.background-img {
+    background-image: url("./src/student-icon.png");
+    background-attachment: fixed;
+    background-size: 35px;
+    position: absolute;
+    z-index: -1;
+    bottom: 20px;
+    left: 730px;
+    height: 180px;
+    border: 1px solid rgb(230, 230, 230);
+
+}
+
 .application-deadline, .application-information{
     border:1px solid #939393;
     border-radius: 5px;
@@ -134,29 +176,19 @@ color: var(--secondary-color);
     background-color: white;
 }
 
-.background-img {
-    background-image: url("./src/student-icon.png");
-    background-attachment: fixed;
-    background-size: 35px;
-    position: absolute;
-    z-index: -1;
-    bottom: 20px;
-    left: 730px;
-    height: 180px;
-    border: 1px solid rgb(230, 230, 230);
-    background-position-x: 0;
-}
-
 /* About  Section*/
 
-#about-section{
-    margin-top: 100px;
-    padding-left: 50px;
-}
+#about-section{ 
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 120px;
+ }
+
 h4{
     font-size: 20px !important;
     font-weight: 200 !important;
  }
+
 .student-img{
 padding-left: 22.5px;
 padding-bottom: 20px;
@@ -167,6 +199,7 @@ height: 350px;
 border-radius: 50%;
 border: 1px solid #e4e4e4;
 }
+
 #student-img{
     margin-top:25px ;
     width: 300px;
@@ -174,18 +207,15 @@ border: 1px solid #e4e4e4;
     border-radius: 50%;
 }
 
-#about-section{ 
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 80px;
- }
+
 .about-summary{
     width: 370px;
     height: 160px;
+    margin-top: 40px;
 
 }
 #value{
-     padding-bottom: 96px;
+     padding-bottom: 142px;
      font-size: 50px;
 }
 
@@ -196,7 +226,7 @@ border: 1px solid #e4e4e4;
 
 #study{
     width: 230px;
-    padding-bottom: 23px;
+    padding-bottom: 71px;
 }
 
 #work{
@@ -221,12 +251,15 @@ border: 1px solid #e4e4e4;
     background:#fff; 
     padding:0 10px; 
 }
+
 .line{
     width: 20px; 
     height: 1px; 
     background-color: #b4b3b3;
 }
+
 /* Slider Section*/
+
 #carousel{
     padding-left: 80px !important;
     padding-right: 80px !important;
@@ -255,9 +288,14 @@ border: 1px solid #e4e4e4;
     margin-top: 30px;
 }
 
-li {
-    list-style: none;
-}
+    li {
+        position: absolute;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+        grid-gap: 300px;
+        pointer-events: none;
+    }
 
 .student-slider {
     position: relative;
@@ -300,7 +338,6 @@ li {
     flex: 1; /* Fill remaining space */
     background-color: #ebebeb44;
     padding: 20px;
-    
 }
 
 /* Drop Menu & Accordion*/
@@ -311,46 +348,47 @@ padding-right: 200px!important;
 margin-top: 200px;
 margin-bottom: 50px;
 
-
 .navbar-brand {
     color: var(--main-branding-color);
-    
 }
 
 #navbarNavDropdown{
     display: flex;
     justify-content: flex-end;
 }
+
 .drop-btn{
-    
     background-color: white;
     color:var(--main-branding-color);
     border-radius: 16px;
     border: 0.5px solid var(--primary-color);
-    padding-left: 5px;
-    padding-right:5px ;
+    padding-left: 15px;
+    padding-right:15px ;
 }
 
 #filter{
     display: flex;
-    margin-left: 10px;
-    margin-top: 15px;
+    align-items: end;
+    justify-content: right;
+    margin-left: 5px;
+    margin-top: 10px;
     font-size: 15px;
 }
+
 .nav-item.dropdown {
     display: flex;
     align-items: center;
   }
+
   .accordion{
     --bs-accordion-active-bg: white;
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-active-color: #636363; ;
-
 }
+
 .accordion-button::after{
     background-image: url(/src/plus-circle.svg);
 transition: 0.5;
-
 }
 
 .accordion-button:not(.collapsed)::after{
@@ -360,10 +398,19 @@ transition: 0.5;
 
 .accordion-body{
     display: flex;
-
    text-align: left;
    flex-direction: column;
    padding-left: 430px !important;
 }
 
+/* sticky bar*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+  }
+    
 }
