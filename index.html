@@ -6,7 +6,8 @@
     <title>Interaction Design Apprenticeship | Harbour.Space University</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <link href="https://db.onlinewebfonts.com/c/74c3c29282b604a9eed88ac6ede61463?family=ApercuPro-Regular" rel="stylesheet">       
+    <link href="https://db.onlinewebfonts.com/c/74c3c29282b604a9eed88ac6ede61463?family=ApercuPro-Regular" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">       
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/9df961112f.js" crossorigin="anonymous"></script>
 </head>
@@ -178,59 +179,28 @@
                       <p id="testimonial">This Fellowship was a turning point in my career. I wouldn't be where I am today without the finanical support and experienced offered through the program.</p>
                       <p id="student-edu"> Education . B.A. Visual Design</p>
                     </div>
-                </div>
-                <div class="student-slider">
-                  <div class="slider-header">
-                      <img src="/src/student-profile.jpg" alt="profile-pic" id="profile-pic">
-                      <div class="text-container">
-                          <p id="student-name">Irene Pereyra</id>
-                          <p id="student-info">Interaction Design Fellow '19</p>
-                      </div>
-                      <div class="linkedIn">
-                        <i class="fa-brands fa-linkedin-in fa-lg"></i>
-                      </div>
                   </div>
-                  <div class="slider-info">
-                    <p id="testimonial">This Fellowship was a turning point in my career. I wouldn't be where I am today without the finanical support and experienced offered through the program.</p>
-                    <p id="student-edu"> Education . B.A. Visual Design</p>
-                  </div>
-              </div>
-              <div class="student-slider">
-                <div class="slider-header">
-                    <img src="/src/student-profile.jpg" alt="profile-pic" id="profile-pic">
-                    <div class="text-container">
-                        <p id="student-name">Irene Pereyra</id>
-                        <p id="student-info">Interaction Design Fellow '19</p>
-                    </div>
-                    <div class="linkedIn">
-                      <i class="fa-brands fa-linkedin-in fa-lg"></i>
-                    </div>
-                </div>
-                <div class="slider-info">
-                  <p id="testimonial">This Fellowship was a turning point in my career. I wouldn't be where I am today without the finanical support and experienced offered through the program.</p>
-                  <p id="student-edu"> Education . B.A. Visual Design</p>
-                </div>
-            </div>
                </li>
             </ul>
           </div>
           </div>
         </section>
-
+       
 
     <section id="faq">
+      <div class="faq">
       <div class="faq-menu">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Frequently asked questions</a>
+        <div class="container-fluid bg-white">
+          <a class="navbar-brand " href="#">Frequently asked questions</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown">
-                <p>Filter by:</p><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <button>Program Conditions</button>
+                <p id="filter">Filter by:</p>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="drop-btn">Program Conditions </button>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Program Conditions</a></li>
@@ -247,15 +217,99 @@
       </nav>
     </div>
     <hr>
+
+    
     <div class="menu-programConditions">
-    
-    
-    
-    
-    </div>
-          
-  
+        <div class="accordion accordion-flush" id="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col">
+                         <h2>Program Conditions</h2> 
+                        </div>
+                        <div class="col">
+                          What are my obligations?
+                        </div>
+                      </div>
+                      </div>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> <p>
+                  The majority of our students receiver numerous job offers at the end of the second academic year of their Bachelor's programme and at the end of the first academic year of their Master's programme. The best applicants receive as  offer from  our industrial partners at the beginning of their programmes.
+                </p><br>
+                <p>Harbour.Space is highly recognised among innovative employers and strategic partners of the B.Grimm multi-industry corporation with 140 years of history in Thailand.Together we insure students get the best knowleade about the current job market opportunities</p><br>
+                <p>We offer our students paid internship options during studies jointly woth our industrial partners.</p><br>
+                <p>Employers that hire graduates of Harbour.Space in the past include Google, IBM, Accenture, Typeform, Frog, and other tech centric companies. Our industry specific employability report could be provided to you separately during the admission process.</p>.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <h2>Program Conditions</h2> 
+                        </div>
+                        <div class="col">
+                          Do I get a job placement upon graduation?
+                        </div>
+                      </div>
+                      </div>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <h2>Program Conditions</h2> 
+                        </div>
+                        <div class="col">
+                          What if I want to start my own company?
+                        </div>
+                      </div>
+                      </div>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <h2>Program Conditions</h2> 
+                          </div>
+                          <div class="col">
+                            Do I need a visa?
+                          </div>
+                        </div>
+                        </div>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+        </div>
+        
+         
+  </div>
+</div>
     </section>
+
+              
     <section id="sticky-bar">
         <div class="container text-left">
           <div class="row">
